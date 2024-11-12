@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Link from "next/link";
 
 const pretendard = localFont({
   src: "./fonts/PretendardVariable.subset.woff2",
-  variable: "--font-pretendard",
   display: "swap",
   weight: "75 920",
   style: "normal",
@@ -23,7 +23,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body className={`${pretendard.variable} antialiased`}>{children}</body>
+      <body className={pretendard.className}>
+        <div className="mx-auto max-w-screen-md py-8 px-4">
+          <nav className="mb-8">
+            <Link href="/" className="font-bold text-2xl">
+              이다용
+            </Link>
+          </nav>
+          {children}
+        </div>
+      </body>
     </html>
   );
 }

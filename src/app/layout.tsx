@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body className={pretendard.className}>
-        <div className="mx-auto max-w-screen-md py-8 px-4">
+        <div className="mx-auto max-w-screen-sm py-8 px-4">
           <nav className="mb-8">
             <Link href="/" className="font-bold text-2xl">
               이다용

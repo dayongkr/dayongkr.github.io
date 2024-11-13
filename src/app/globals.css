@@ -15,11 +15,24 @@ body {
 }
 
 .prose * {
-  @apply mb-4;
+  @apply mb-6;
+}
+
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6 {
+  @apply font-bold !mt-12;
 }
 
 .prose h1 {
-  @apply text-4xl font-bold;
+  @apply text-4xl;
+}
+
+.prose h2 {
+  @apply text-2xl;
 }
 
 .prose a {

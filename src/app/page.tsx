@@ -1,11 +1,11 @@
 import { ExternalLink } from "@/components/ExternalLink";
-import Link from "next/link";
+import { RecentPosts } from "./_components/RecentPosts";
 
 export default function Home() {
   return (
     <div className="flex flex-col gap-8">
-      <article className="prose">
-        <h1 className="!text-xl">
+      <article className="flex flex-col gap-4 mb-8">
+        <h1 className="text-xl font-bold">
           세상에 도움이 되는 것을 만들기 좋아하는 소프트웨어 엔지니어
           이다용입니다.
         </h1>
@@ -27,14 +27,7 @@ export default function Home() {
           에 프론트엔드 개발자로 2025년 1월에 입사 예정입니다.
         </p>
       </article>
-      <h2 className="text-2xl">최근 글</h2>
-      <Link href="/posts/1">
-        <article>
-          <h3 className="text-2xl font-bold">글 제목</h3>
-          <p className="text-lg mb-2">글 요약</p>
-          <p className="text-sm">24.11.06</p>
-        </article>
-      </Link>
+      <RecentPosts />
     </div>
   );
 }

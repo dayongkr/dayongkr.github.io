@@ -23,6 +23,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
+      <head>
+        <meta
+          name="google-site-verification"
+          content="mkp2fkrzmdVoExgK4_PybejhTOZs188pdNept2jMIiA"
+        />
+      </head>
       <body className={pretendard.className}>
         <div className="mx-auto max-w-screen-sm py-8 px-4">
           <nav className="mb-8">
